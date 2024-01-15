@@ -9,4 +9,43 @@
     --black: #131318;
     --white: #FFFFFF;
     --dark: #424247;
+    --border: #3c5757;
 }
+
+/* Header section style */
+
+header{
+    max-width: 1170px;
+    margin: auto;
+    border: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+}
+
+header span{
+    color: var(--orange);
+}
+
+header nav ul{
+    display: flex;
+}
+header nav ul li{
+    list-style: none;
+    padding-right: 30px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: var(--dark);
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+header nav ul li #active:visited {
+    color: var(--orange);
+  }
+
+/* Banner section style */
+
+
