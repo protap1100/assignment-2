@@ -1,0 +1,12 @@
+/* Shared style  */
+*{
+    font-family: 'Mulish', sans-serif;
+}
+
+/* Color */
+:root{
+    --orange: #FF5400;
+    --black: #131318;
+    --white: #FFFFFF;
+    --dark: #424247;
+}
