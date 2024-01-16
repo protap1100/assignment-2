@@ -368,6 +368,10 @@ main{
     border-radius: 5px;
 }
 
+.news-letter .news-img .btn span{
+    font-weight: 800px;
+    font-size: 1.5rem;
+}
 
 /* Destination section style */
 
@@ -444,6 +448,8 @@ main{
 }
 
 
+/* Reason Section */
+
 .reason {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -483,8 +489,6 @@ main{
     max-width: 50%;
     margin: 0 auto;   
 }
-
-
 
 
 /* Bouns section style */
