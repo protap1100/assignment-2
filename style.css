@@ -285,6 +285,21 @@ header nav ul li #active:visited {
     width: 60%;
     height: auto;
     padding-left: 80px;
+    position: relative;
+}
+
+.news-letter .news-img .btn {
+    position: absolute;
+    bottom: 55px;
+    right: 5px;
+    transform: rotate(-19.628deg);
+    padding: 15px 80px;
+    background-color: var(--orange);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.3rem;
+    border-radius: 5px;
 }
 
 
@@ -451,14 +466,6 @@ header nav ul li #active:visited {
 .bonus-section .review-text{
     text-align: left;
 }
-
-
-
-
-
-
-
-
 
 
 /* Footer style */
@@ -638,8 +645,6 @@ footer  .footer-copyright{
         padding: 0px;
     }
     
-
-
     .reason {
         grid-template-columns: 1fr; 
     }
@@ -669,6 +674,12 @@ footer  .footer-copyright{
         margin: 8px 0;
     }
 
-
+    .news-letter .news-img .btn {
+        bottom: 30px; /* Adjust the bottom value for smaller screens */
+        right: 10px; /* Adjust the right value for smaller screens */
+        padding: 10px 20px; /* Adjust padding for smaller screens */
+        font-size: 1rem; /* Adjust font size for smaller screens */
+        transform: rotate(-19.628deg);
+    }
   }
 
