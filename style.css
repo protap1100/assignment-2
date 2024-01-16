@@ -80,18 +80,27 @@ header nav ul li #active:visited {
     color: var(--orange);
 }
 
+header .logo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+header .logo img{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
 
 
-
-  /* main section style */
-
-  main{
+/* main section style */
+main{
     max-width: 1170px;
     margin: auto;
     }
 
 /* Banner section style */
-
 .banner{
     display: grid; 
     margin-top: 60px;
@@ -101,8 +110,6 @@ header nav ul li #active:visited {
     background-repeat: no-repeat;
     border-radius: 10px;
 }
-
-
 
 .banner .banner-content{
     display: grid;
@@ -205,7 +212,7 @@ header nav ul li #active:visited {
 }
 
 .deals .deals-content .deals-title{
-    color: #131318;
+    color: var(--black);
     font-size: 2.5rem;
     font-weight: 800;
     line-height: 60px; 
@@ -213,7 +220,7 @@ header nav ul li #active:visited {
 }
 
 .deals .deals-content .deals-desc{
-    color: #5A5A5D;
+    color: var(--dark);
     font-size: 1rem;
     font-weight: 400;
     line-height: 26px; 
@@ -222,7 +229,7 @@ header nav ul li #active:visited {
 
 
 .deals .deals-content ul li{
-    color: #131318;
+    color: var(--black);
     font-size: 1rem;
     font-weight: 700;
     line-height: 26px; 
@@ -235,6 +242,56 @@ header nav ul li #active:visited {
     height: auto;
     padding-left: 85px;
 }
+
+.deals-img {
+    position: relative;
+}
+
+.overlay {
+    position: relative;
+    display: inline-block;
+}
+
+.overlay::before {
+    content: '\25BA';
+    font-size: 2rem;
+    color: var(--white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.player-controls {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.play-pause-btn {
+    width: 20px;
+    height: 20px;
+    background-color: var(--white);
+    margin-right: 10px;
+}
+
+.time {
+    color: var(--white);
+    font-size: 0.8rem;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    font-size: 1.2rem;
+    text-align: center;
+}
+
 
 
 /* news letter section  */
@@ -271,7 +328,7 @@ header nav ul li #active:visited {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
-    border: 1px solid #ccc;
+    border: 1px solid var(--white);
     border-radius: 8px;
     box-sizing: border-box;
     cursor: pointer;
@@ -326,7 +383,7 @@ header nav ul li #active:visited {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white; 
+    color: var(--white); 
     font-size: 1.5rem;
     font-weight: 800;
 }
@@ -336,7 +393,7 @@ header nav ul li #active:visited {
 }
 
 .destination-content .destination-title{
-    color: #131318;
+    color: var(--black);
     text-align: center;
     font-size: 2.5rem;
     font-weight: 800;
@@ -363,7 +420,7 @@ header nav ul li #active:visited {
 }
 
 .choose-us .choose-us-content h2{
-    color: #131318;
+    color: var(--black);
     text-align: center;
     font-size: 2.5rem;
     font-weight: 800;
@@ -444,6 +501,7 @@ header nav ul li #active:visited {
     background-color: rgb(216, 206, 223);
     border: 1px solid rgba(233, 68, 68, 0.20);
     border-radius: 10px;
+    padding: 30px;
 }
 
 .bonus-section img{
@@ -466,6 +524,8 @@ header nav ul li #active:visited {
 .bonus-section .review-text{
     text-align: left;
 }
+
+/* discount bonus section style */
 
 
 /* Footer style */
@@ -526,7 +586,7 @@ footer  .footer-copyright{
 
 /* Responsive Media Section */
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 600px    ) {
 
     header{
         flex-direction: column;
@@ -541,11 +601,10 @@ footer  .footer-copyright{
         gap: 30px;
     }
     
-
     .banner {
         background-position: center; 
     }
-
+    
     .banner .search-section {
         margin: 20px;
         padding: 10px; 
@@ -590,6 +649,7 @@ footer  .footer-copyright{
     }
     .deals-img img{
         width: 100%;
+        margin-top: 20px;
     }
 
     .btn-primary3{
@@ -671,15 +731,21 @@ footer  .footer-copyright{
     .bonus-section .see-more-btn{
         width: 45%;
         padding: 12px 20px;
-        margin: 8px 0;
+        margin: 8px 15px;
     }
 
     .news-letter .news-img .btn {
-        bottom: 30px; /* Adjust the bottom value for smaller screens */
-        right: 10px; /* Adjust the right value for smaller screens */
-        padding: 10px 20px; /* Adjust padding for smaller screens */
-        font-size: 1rem; /* Adjust font size for smaller screens */
+        bottom: 30px; 
+        right: 10px; 
+        padding: 10px 20px; 
+        font-size: 1rem;
         transform: rotate(-19.628deg);
     }
-  }
 
+    .bonus-section .review{
+        background-color: rgb(216, 206, 223);
+        border: 1px solid rgba(233, 68, 68, 0.20);
+        border-radius: 10px;
+        padding: 10px;
+    }
+  }
