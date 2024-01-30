@@ -385,7 +385,7 @@ main{
                      'image-container1   image-container1   image-container1     image-container2   image-container2    image-container2'
                      'image-container3   image-container3   image-container4     image-container4   image-container5    image-container5'
                      'image-container6   image-container6   image-container6     image-container7   image-container7    image-container7';
-                     grid-gap: 10px;
+                      grid-gap: 10px;
 }
 
 .destination-img .row .image-container1{
